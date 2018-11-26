@@ -1,7 +1,7 @@
-﻿using System;
-namespace WalkingGame
+﻿namespace WalkingGame
 {
     public interface IRandom
     {
+        int Next(int n);
     }
 }

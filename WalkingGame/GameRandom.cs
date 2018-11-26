@@ -1,10 +1,13 @@
 ﻿using System;
 namespace WalkingGame
 {
-    public class GameRandom
+    public class GameRandom : IRandom
     {
-        public GameRandom()
+        readonly Random rnd = new Random();
+
+        public int Next(int n)
         {
+            return rnd.Next(n);
         }
     }
 }

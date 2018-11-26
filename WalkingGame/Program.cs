@@ -1,12 +1,12 @@
-﻿using System;
-
-namespace WalkingGame
+﻿namespace WalkingGame
 {
     class MainClass
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IRandom random = new GameRandom();
+            Game game = new Game(30, random);
+            game.Play();
         }
     }
 }
